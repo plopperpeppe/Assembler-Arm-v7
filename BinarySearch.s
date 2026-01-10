@@ -1,5 +1,5 @@
-.global _start
-_start:
+.global main
+main:
 	
 	@this program contains a function that search a int in a int array with binary search, binarySearch(int x, int dim, int *array)
 	@The function returns 1 if we found the value and 0 if we didn't found it
@@ -55,3 +55,4 @@ _start:
 	.data
 
 	v: .word 1,4,7,12,16,23,32,43 @random sorted array, you can change the value and the length
+
