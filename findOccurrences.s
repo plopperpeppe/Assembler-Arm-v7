@@ -1,16 +1,11 @@
-.global _start
-_start:
+.global main
+main:
 	
-	@definiamo un programma con una funzione che, dato in r0 l'indirizzo di una stringa che contiene solo caratteri alfanumerici, conti
-	@tutte le occorrenze del carattere il cui codice è in r1
-	
-	@r1 carattere da trovare
-	@r0 contatore
-	@r2 stringa
+	@define a function that counts the occurrences of a character in a string
 	
 	.text
 	mov r1, #'w' @carattere da trovare
-	ldr r0, =s @carichiamo in r2 l'indirizzo della stringa
+	ldr r0, =s @load the address of the string
 	bl counter
 	
 	
@@ -30,4 +25,5 @@ _start:
 	
 	
 	.data
+
 	s:	.string "hello world" @a random string
