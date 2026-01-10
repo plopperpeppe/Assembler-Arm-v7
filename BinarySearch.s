@@ -3,12 +3,6 @@ _start:
 	
 	@this program contains a function that search a int in a int array with binary search, binarySearch(int x, int dim, int *array)
 	@The function returns 1 if we found the value and 0 if we didn't found it
-
-	@r4 aveva l'indirizzo temp
-	@r5 aveva l'indirizzo array
-	@r0 il valore
-	@r1 il valore destro
-	@r2 il valore sinistro
 	.text
 	mov r0, #4 @random number to search, feel free to change this value for your test
 	ldr r2, =v @load the address of the array
@@ -59,4 +53,5 @@ _start:
 
 
 	.data
+
 	v: .word 1,4,7,12,16,23,32,43 @random sorted array, you can change the value and the length
